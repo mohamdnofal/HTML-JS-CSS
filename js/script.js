@@ -1,5 +1,5 @@
 'use strict'; //Using a variable without declaring it, is not allowed
-if(false){
+
 let userName = prompt ('What is your name?');
 if (userName != '') {
     document.getElementById('userName').innerHTML='Hello ' + userName+', ';
@@ -57,4 +57,3 @@ if (mohdDegree == 'yes' || mohdDegree == 'y') {
     alert('wrong, Mohammad has an accounting BCs degree');
     console.log('You wrong, Mohammad has an accounting BCs degree');
 }
-// }
