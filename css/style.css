@@ -34,3 +34,12 @@ footer {
 
 
 
+ul li {
+    background-color: coral;
+}
+ol li {
+    background-color: cyan;
+}
+div p {
+    background-color: rgba(0, 139, 139, 0.849);
+}
