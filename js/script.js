@@ -71,14 +71,18 @@ for(let i=0; i<4; i++) {
   if(mohdMeal === 50){
     correct+=1;
     alert('congrats');
+    console.log('congrats');
     break;
   } else if (mohdMeal < 50){
     alert('too low');
+    console.log('too low');
   }else if (mohdMeal > 50){
     alert('too high');
+    console.log('too high');
   }
   if(i === 3){
     alert('this was your last chance! the correct answer is 50');
+    console.log('this was your last chance! the correct answer is 50');
   }
 }
 // different solution
@@ -110,11 +114,14 @@ for(let i=0; i<6; i++) {
   if(correctNum.includes(guessNum)){
     correct+=1;
     alert('congrats');
+    console.log('congrats');
     break;
   }
   if(i === 5){
     alert('this was your last chance! the correct answer is 50');
+    console.log('this was your last chance! the correct answer is 50');
   }
 }
 
 alert ('you have answered '+correct+'quasitons correctly');
+console.log('you have answered '+correct+'quasitons correctly');
