@@ -1,4 +1,5 @@
 'use strict'; //Using a variable without declaring it, is not allowed
+alert('you are welcome');
 
 let userName = prompt ('What is your name?');
 if (userName != '') {
