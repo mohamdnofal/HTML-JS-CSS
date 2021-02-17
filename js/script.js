@@ -108,8 +108,11 @@ for(let i=0; i<4; i++) {
 
 let guessNum;
 let correctNum= [1, 49, 30];
-for(let i=0; i<6; i++) {
-  guessNum = prompt('Guess 3 numbers between 1-100?',0);
+let tryCount=6;
+let numCount=3;
+function gusseGame(tryCount, correctNum, numCount){
+for(let i=1; i<=tryCount; i++) {
+  guessNum = prompt('Guess' + numCount+  'numbers between 1-100?',0 );
   guessNum = parseInt (guessNum);
   if(correctNum.includes(guessNum)){
     correct+=1;
@@ -117,11 +120,12 @@ for(let i=0; i<6; i++) {
     console.log('congrats');
     break;
   }
-  if(i === 5){
-    alert('this was your last chance! the correct answer is 50');
-    console.log('this was your last chance! the correct answer is 50');
+  if(i === tryCount){
+    alert('this was your last chance! the correct answer is '+ correctNum);
+    console.log('this was your last chance! the correct answer is '+ correctNum);
+  }
   }
 }
-
-alert ('you have answered '+correct+'quasitons correctly');
+gusseGame(tryCount, correctNum,numCount);
+  alert ('you have answered '+correct+'quasitons correctly');
 console.log('you have answered '+correct+'quasitons correctly');
