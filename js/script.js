@@ -1,4 +1,4 @@
-'use strict'; //Using a variable without declaring it, is not allowed
+'use strict'; 
 alert('you are welcome');
 let correct=0;
 let userName = prompt ('What is your name?');
@@ -85,24 +85,7 @@ for(let i=0; i<4; i++) {
     console.log('this was your last chance! the correct answer is 50');
   }
 }
-// different solution
-// let count=0;
-// while (count<4) {
-//   mohdMeal = prompt('Guess number between 1-100?',0);
-//   mohdMeal = parseInt (mohdMeal);
-//   if(mohdMeal === 50){
-//     alert('congrats');
-//     count = 4;
-//   } else if (mohdMeal < 50){
-//     alert('too low');
-//   }else if (mohdMeal > 50){
-//     alert('too high');
-//   }
-//   if(count === 3){
-//     alert('this was your last chance! the correct answer is 50');
-//   }
-//   count++;
-// }
+
 
 
 
@@ -111,21 +94,21 @@ let correctNum= [1, 49, 30];
 let tryCount=6;
 let numCount=3;
 function gusseGame(tryCount, correctNum, numCount){
-for(let i=1; i<=tryCount; i++) {
-  guessNum = prompt('Guess' + numCount+  'numbers between 1-100?',0 );
-  guessNum = parseInt (guessNum);
-  if(correctNum.includes(guessNum)){
-    correct+=1;
-    alert('congrats');
-    console.log('congrats');
-    break;
-  }
-  if(i === tryCount){
-    alert('this was your last chance! the correct answer is '+ correctNum);
-    console.log('this was your last chance! the correct answer is '+ correctNum);
-  }
+  for(let i=1; i<=tryCount; i++) {
+    guessNum= prompt('Guess' + numCount+ 'numbers between 1-100?',0 );
+    guessNum = parseInt (guessNum);
+    if(correctNum.includes(guessNum)){
+      correct+=1;
+      alert('congrats');
+      console.log('congrats');
+      break;
+    }
+    if(i === tryCount){
+      alert('this was your last chance! the correct answer is '+ correctNum);
+      console.log('this was your last chance! the correct answer is '+ correctNum);
+    }
   }
 }
 gusseGame(tryCount, correctNum,numCount);
-  alert ('you have answered '+correct+'quasitons correctly');
+alert ('you have answered '+correct+'quasitons correctly');
 console.log('you have answered '+correct+'quasitons correctly');
